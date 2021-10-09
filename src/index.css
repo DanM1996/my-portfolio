@@ -31,3 +31,7 @@ main {
 a {
   text-decoration: none;
 }
+
+.navActive {
+  color: yellow;
+}

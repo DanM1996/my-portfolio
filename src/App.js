@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Pages from './components/Pages';
 // import './App.css';
 
 function App() {
-  const navCategories = [
+  // array brackets make it so pages only takes in the values in the useState function
+  const [pages] = useState([
     {
       id: 1,
       name: 'About'
@@ -24,15 +26,20 @@ function App() {
       id: 4,
       name: 'Resume'
     }
-  ];
+  ]);
+
+  const [currentPage, setCurrentPage] = useState(pages[0])
+  console.log(currentPage.name);
   return (
     <div>
-      <Nav navCategories={navCategories}></Nav>
+      <Nav 
+      // assinging props the value of the variables on this page, keeping names the same for continuity
+      pages={pages}
+      currentPage={currentPage}
+      setCurrentPage={setCurrentPage}
+      ></Nav>
       <main>
-        <About></About>
-        <Projects></Projects>
-        <Contact></Contact>
-        <Resume></Resume>
+        <Pages currentPage={currentPage}></Pages>
       </main>
     </div>
   );
