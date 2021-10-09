@@ -35,3 +35,7 @@ a {
 .navActive {
   color: yellow;
 }
+
+.project-item-4 {
+  background-image: url(./assets/images/Spontaneous-Selection.PNG);
+}
