@@ -39,3 +39,7 @@ a {
 .project-item-4 {
   background-image: url(./assets/images/Spontaneous-Selection.PNG);
 }
+.hoverText {
+  color: white;
+  text-align: center;
+}
