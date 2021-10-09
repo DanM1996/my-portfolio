@@ -36,10 +36,14 @@ a {
   color: yellow;
 }
 
-.project-item-4 {
+.project-item-1 {
   background-image: url(./assets/images/Spontaneous-Selection.PNG);
 }
-.hoverText {
+
+.project-item-2 {
+  background-image: url(./assets/images/Blue42.PNG);
+}
+/* .textStyle {
   color: white;
   text-align: center;
-}
+} */

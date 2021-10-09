@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import background1 from '../../assets/images/Spontaneous-Selection.PNG'
+import background2 from '../../assets/images/Blue42.PNG';
 
 function Projects() {
 
@@ -10,37 +11,57 @@ function Projects() {
     const offHover = () => {
         setHover(false);
     }
-    const hoverText =  <p className="hoverText" style={{ 
+    const hoverText1 = <p className="hoverText" style={{
         backgroundImage: `url(${background1})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100%',
         width: '500px',
         height: '600px',
         opacity: '50%'
-        }} > <a href="https://danm1996.github.io/spontaneous-selection/" target="_blank" class="project-item-4">
-        <span>Spontaneous Selection</span>
-    </a> </p>;
+    }} > <a href="https://danm1996.github.io/spontaneous-selection/" target="_blank" class="project-item-1">
+            <span>Spontaneous Selection</span>
+        </a>
+    </p>;
 
-    console.log(hoverText)
+const hoverText2 = <p className="hoverText" style={{
+    backgroundImage: `url(${background2})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100%',
+    width: '500px',
+    height: '600px',
+    opacity: '50%'
+}} > <a href="https://secret-everglades-56686.herokuapp.com/" target="_blank" class="project-item-2">
+        <span>Blue 42</span>
+    </a>
+</p>;
 
     return (
         <>
-            <p>Projects go here!</p>
-            <div className='project-containers'>
-            <section style={{ 
+            <p>My Projects</p>
+            <section style={{
                 backgroundImage: `url(${background1})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '100%',
                 width: '500px',
                 height: '250px',
-                }}
+            }}
                 onMouseEnter={onHover}
                 onMouseLeave={offHover}
-                >
-                    {hover ? hoverText : ''}
+            >
+                {hover ? hoverText1 : ''}
             </section>
-            
-            </div>
+            <section style={{
+                backgroundImage: `url(${background2})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: '100%',
+                width: '500px',
+                height: '250px',
+            }}
+                onMouseEnter={onHover}
+                onMouseLeave={offHover}
+            >
+                {hover ? hoverText2 : ''}
+            </section>
         </>
     )
 }
