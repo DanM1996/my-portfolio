@@ -14,15 +14,15 @@ function Nav(props) {
     }, [currentPage])
     
     return (
-        <header className="flex-row space-1">
-            <h2>
+        <header className="flex-row">
+            <h1 class="name-tag">
                 Dan Martinez
-            </h2>
+            </h1>
             <nav>
-            <ul className="flex-row nav-spacing">
+            <ul className="flex-row nav-items">
                 {pages.map(navItem => (
-                    <li className={`li-spacing ${currentPage.name === navItem.name && 'navActive'}`} key={navItem.id}>
-                       <span onClick={() => { setCurrentPage(navItem) }}>{navItem.name}</span>
+                    <li className={`li-spacing text-format ${currentPage.name === navItem.name && 'navActive'}`} key={navItem.id}>
+                       <span className="" onClick={() => { setCurrentPage(navItem) }}>{navItem.name}</span>
                     </li>
                 ))}
             </ul>

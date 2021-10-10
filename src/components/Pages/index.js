@@ -18,14 +18,9 @@ function Pages({ currentPage }) {
         }
     }
     return (
-        <>
-        <h2>
-            {currentPage.name}
-        </h2>
         <div>
         {renderPage()}
         </div>
-        </>
     )
 };
 

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import Form from 'react-bootstrap/Form';
+
 
 function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
@@ -15,43 +17,45 @@ function Contact() {
             }
         } else {
             if (!data.target.value.length) {
-                setErrorMessage(`${data.target.name} required`)
+                setErrorMessage(`Please enter your ${data.target.name}`)
             } else {
                 setErrorMessage('');
             }
         }
         if (!errorMessage) {
-            setFormState({ ...formState, [data.target.name]: data.target.value })
+            setFormState({...formState, [data.target.name]: data.target.value })
         }
     }
-    function runSubmit(info) {
-        info.preventDefault();
+    function runSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
     }
     return (
         <>
-            <p>Contact Form goes here!</p>
             <section>
-                <h1>Contact Form</h1>
-                <form id="contactForm" onSubmit={runSubmit}>
-                    <div>
-                        <label htmlFor="name">Name:</label>
-                        <input type="text" defaultValue={name} onBlue={formValues} name="name" />
-                    </div>
-                    <div>
-                        <label htmlFor="name">Email:</label>
-                        <input type="text" defaultValue={email} onBlue={formValues} name="email" />
-                    </div>
-                    <div>
-                        <label htmlFor="name">Message:</label>
-                        <textarea name="message" defaultValue={message} onBlue={formValues} rows="4" />
-                    </div>
+                <h2 className="text-format">Contact Form</h2>
+                <Form id="contactForm" onSubmit={runSubmit}>
+                    <Form.Group className="mb-3" controlId="formBasicName">
+                        <Form.Label htmlFor="name" className="text-format">Name:</Form.Label>
+                        <Form.Control type="text" defaultValue={name} onBlur={formValues} name="name" placeholder="Enter your name" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label htmlFor="name" className="text-format">Email:</Form.Label>
+                        <Form.Control type="email" defaultValue={email} onBlur={formValues} name="email" placeholder="Enter valid email" />
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label htmlFor="name" className="text-format">Message:</Form.Label>
+                        <Form.Control as="textarea" name="message" defaultValue={message} onBlue={formValues} rows={4} placeholder="Type your message here" />
+                    </Form.Group>
                     {errorMessage && (
-                        <div>
-                            <p>{errorMessage}</p>
-                        </div>
+                        <Form.Group className="mb-3">
+                            <p className="error-message">{errorMessage}</p>
+                        </Form.Group>
                     )}
-                    <button type="submit">Submit</button>
-                </form>
+                    <div className="center">
+                        <button type="submit" className="submit-btn">Submit</button>
+                    </div>
+                </Form>
             </section>
         </>
     )
