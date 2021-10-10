@@ -29,7 +29,7 @@ function App() {
   return (
     <div>
       <Nav 
-      // assinging props the value of the variables on this page, keeping names the same for continuity
+      // assigning props the value of the variables on this page, keeping names the same for continuity
       pages={pages}
       currentPage={currentPage}
       setCurrentPage={setCurrentPage}
