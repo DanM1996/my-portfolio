@@ -52,7 +52,15 @@ function Portfolio() {
     ])
     return (
         <>
-            <h2 className="text-format">Portfolio</h2>
+            <h2 class="text-format portfolio-title">Portfolio</h2>
+            {/* <Container>
+                {projects.map((projects, idx) => (
+                    <Projects
+                    projects={projects}
+                    key={'projects' + idx}
+                    />
+                ))}
+            </Container> */}
             <Container>
                 <Row xs={12} lg={8}>
                     <Col className="hvr-grow">
