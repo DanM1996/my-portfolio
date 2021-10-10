@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import image1 from '../../assets/images/Blue42.PNG';
 import image2 from '../../assets/images/Spontaneous-Selection.PNG'
@@ -9,7 +9,7 @@ import image6 from '../../assets/images/Notes.PNG';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function Projects() {
+function Portfolio() {
     return (
         <>
             <h2 className="text-format">Portfolio</h2>
@@ -85,4 +85,4 @@ function Projects() {
     )
 }
 
-export default Projects;
+export default Portfolio;

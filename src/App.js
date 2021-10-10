@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import Pages from './components/Pages';
+import Footer from './components/Footer';
 // import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     },
     {
       id: 2,
-      name: 'Projects'
+      name: 'Portfolio'
     },
     {
       id: 3,
@@ -36,6 +37,7 @@ function App() {
       <main>
         <Pages currentPage={currentPage}></Pages>
       </main>
+      <Footer />
     </div>
   );
 }

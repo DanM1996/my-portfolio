@@ -21,8 +21,9 @@ main {
 header, nav, ul, li, h1, span {
   background-color: rgb(37, 36, 36);
 }
-header {
+header, footer {
   justify-content: space-between;
+  padding: 20px;
 }
 .name-tag {
   margin-left: 40px;
@@ -30,6 +31,7 @@ header {
 }
 .nav-items {
   width: 100%;
+  padding-top: 8px;
 }
 .flex-row{
   display: flex;
@@ -171,4 +173,52 @@ a {
   background-color: white;
   width: 100%;
 }
-
+.about-me {
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+.resume {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 20px;
+}
+.skills {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+h2, h3 {
+  color: var(--text-color);
+}
+.li-text {
+  color: var(--text-color);
+  background-color: var(--primary) ;
+}
+ul.style {
+  list-style-type:circle ;
+  background-color: var(--primary);
+}
+footer {
+  position: fixed;
+  padding: 10px 10px 45px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 40px;
+  background-color: rgb(37, 36, 36);
+  align-items: center;
+}
+footer a{
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: rgb(37, 36, 36);
+}

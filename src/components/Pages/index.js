@@ -1,14 +1,14 @@
 import React from 'react';
 import About from '../About';
 import Contact from '../Contact';
-import Projects from '../Projects';
+import Portfolio from '../Portfolio';
 import Resume from '../Resume';
 
 function Pages({ currentPage }) {
     const renderPage = () => {
         switch(currentPage.name) {
-            case 'Projects': 
-                return <Projects />;
+            case 'Portfolio': 
+                return <Portfolio />;
             case 'Contact':
                 return <Contact />;
             case 'Resume':
