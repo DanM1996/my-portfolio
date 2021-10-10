@@ -8,3 +8,6 @@ Hello and welcome to my portfolio site. I've taken a lot of what I learned and c
 * Bootstrap
 * Hover.css
 * JavaScript
+
+# Link to Live Site:
+This portfolio is being hosted on heroku: [Check it out](https://secret-gorge-72740.herokuapp.com/)
