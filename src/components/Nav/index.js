@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Projects from '../Projects';
 
 
 function Nav(props) {

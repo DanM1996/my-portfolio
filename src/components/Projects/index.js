@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import background1 from '../../assets/images/Spontaneous-Selection.PNG'
-import background2 from '../../assets/images/Blue42.PNG';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Projects() {
 
@@ -8,45 +9,33 @@ function Projects() {
 
     const hoverText = (link, text) => {
         return <p>
-            <a href={link} target="_blank" className="project-item">
+            <a href={link} target="_blank" rel="noreferrer" className="project-item">
                 <span>{text}</span>
             </a>
         </p>
     }
     return (
         <>
-            <p>My Projects</p>
-            <div className="container">
-                <div className="row-1">
-                    <section style={{
-                        backgroundImage: `url(${background1})`,
-                        backgroundRepeat: 'no-repeat',
-                        backgroundSize: '100%',
-                        width: '500px',
-                        height: '250px',
-                        opacity: hover[0] ? '50%' : '100%'
+            <h2 className="text-format">Projects</h2>
+            <Container>
+                <Row xs={12} lg={8}>
+                    <Col className="project-1" style={{
+                        // opacity: hover[0] ? '50%' : '100%'
                     }}
                         onMouseEnter={() => { setHover([true, false]) }}
                         onMouseLeave={() => { setHover([false, false]) }}
                     >
                         {hover[0] ? hoverText('https://danm1996.github.io/spontaneous-selection/', 'Spontaneous Selection') : ''}
 
-                    </section>
-                    <section style={{
-                        backgroundImage: `url(${background2})`,
-                        backgroundRepeat: 'no-repeat',
-                        backgroundSize: '100%',
-                        width: '500px',
-                        height: '250px',
-                        opacity: hover[1] ? '50%' : '100%'
-                    }}
+                    </Col>
+                    <Col className={hover[1] ? " hover-style-2 hvr-grow " : "project-2"} 
                         onMouseEnter={() => { setHover([false, true]) }}
                         onMouseLeave={() => { setHover([false, false]) }}
                     >
-                        {hover[1] ? hoverText('https://secret-everglades-56686.herokuapp.com/', 'Blue 42') : ''}
-                    </section>
-                </div>
-            </div>
+                        {hover[1] ?  hoverText( 'https://secret-everglades-56686.herokuapp.com/', 'Blue 42') : ''}
+                    </Col>
+                </Row>
+            </Container>
         </>
     )
 }
