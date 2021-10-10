@@ -4,37 +4,15 @@ import background2 from '../../assets/images/Blue42.PNG';
 
 function Projects() {
 
-    const [hover, setHover] = useState(false)
-    const onHover = () => {
-        setHover(true);
+    const [hover, setHover] = useState([false, false])
+    
+    const hoverText = (link, text) => {
+        return <p>
+            <a href={link} target="_blank" className="project-item">
+                <span>{text}</span>
+            </a>
+            </p>
     }
-    const offHover = () => {
-        setHover(false);
-    }
-    const hoverText1 = <p className="hoverText" style={{
-        backgroundImage: `url(${background1})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: '100%',
-        width: '500px',
-        height: '600px',
-        opacity: '50%'
-    }} > <a href="https://danm1996.github.io/spontaneous-selection/" target="_blank" class="project-item-1">
-            <span>Spontaneous Selection</span>
-        </a>
-    </p>;
-
-const hoverText2 = <p className="hoverText" style={{
-    backgroundImage: `url(${background2})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '100%',
-    width: '500px',
-    height: '600px',
-    opacity: '50%'
-}} > <a href="https://secret-everglades-56686.herokuapp.com/" target="_blank" class="project-item-2">
-        <span>Blue 42</span>
-    </a>
-</p>;
-
     return (
         <>
             <p>My Projects</p>
@@ -44,11 +22,13 @@ const hoverText2 = <p className="hoverText" style={{
                 backgroundSize: '100%',
                 width: '500px',
                 height: '250px',
+                opacity: hover[0] ? '50%' : '100%'
             }}
-                onMouseEnter={onHover}
-                onMouseLeave={offHover}
+                onMouseEnter={() => {setHover([true, false])}}
+                onMouseLeave={() => {setHover([false, false])}}
             >
-                {hover ? hoverText1 : ''}
+                {hover[0] ? hoverText('https://danm1996.github.io/spontaneous-selection/', 'Spontaneous Selection') : ''}
+                
             </section>
             <section style={{
                 backgroundImage: `url(${background2})`,
@@ -56,11 +36,12 @@ const hoverText2 = <p className="hoverText" style={{
                 backgroundSize: '100%',
                 width: '500px',
                 height: '250px',
+                opacity: hover[1] ? '50%' : '100%'
             }}
-                onMouseEnter={onHover}
-                onMouseLeave={offHover}
+            onMouseEnter={() => {setHover([false, true])}}
+            onMouseLeave={() => {setHover([false, false])}}
             >
-                {hover ? hoverText2 : ''}
+               {hover[1] ? hoverText('https://secret-everglades-56686.herokuapp.com/', 'Blue 42') : ''} 
             </section>
         </>
     )
