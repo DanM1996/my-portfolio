@@ -126,3 +126,49 @@ a {
   background-color: #2098D1;
   color: white;
 }
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  width: 90%;
+  height: 77%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  width: 90%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: white;
+}
+
+.storage:hover .overlay {
+  opacity: .6;
+}
+
+.text {
+  background-color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+.text a{
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  width: 100%;
+}
+
