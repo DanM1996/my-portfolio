@@ -32,7 +32,7 @@ function Contact() {
     }
     return (
         <>
-            <section>
+            <div id="contact">
                 <h2 className="text-format">Contact Form</h2>
                 <Form id="contactForm" onSubmit={runSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicName">
@@ -56,7 +56,7 @@ function Contact() {
                         <button type="submit" className="submit-btn">Submit</button>
                     </div>
                 </Form>
-            </section>
+            </div>
         </>
     )
 }

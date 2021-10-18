@@ -4,6 +4,7 @@ import resume from '../../assets/images/Daniel Martinez Resume.pdf';
 function Resume() {
     return (
         <>
+        <div id="skills">
             <a href={resume} download="resume" className="resume">Download my resume</a>
             <h2 className="skills">Skills</h2>
             <h3>Front-end Proficiencies</h3>
@@ -23,6 +24,7 @@ function Resume() {
                 <li className="li-text">MongoDB/Mongoose</li>
                 <li className="li-text">APIs</li>
             </ul>
+            </div>
         </>
     )
 }

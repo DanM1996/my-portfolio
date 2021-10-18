@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
 import Pages from './components/Pages';
 import Footer from './components/Footer';
 // import './App.css';
@@ -35,7 +39,11 @@ function App() {
       setCurrentPage={setCurrentPage}
       ></Nav>
       <main>
-        <Pages currentPage={currentPage}></Pages>
+        {/* <Pages currentPage={currentPage}></Pages> */}
+        <About />
+        <Portfolio />
+        <Resume />
+        <Contact />
       </main>
       <Footer />
     </div>
