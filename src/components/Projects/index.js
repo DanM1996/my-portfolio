@@ -1,31 +1,28 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import image1 from "../../assets/images/Blue42.PNG";
+import image2 from "../../assets/images/Spontaneous-Selection.PNG";
+import image3 from "../../assets/images/Budget.PNG";
+import image4 from "../../assets/images/Password.PNG";
+import image5 from "../../assets/images/Schedule.PNG";
+import image6 from "../../assets/images/Notes.PNG";
 
-function Projects(props){
-    const{ projects = [] } = props;
+
+function PortfolioCard({ id, name, image, link, repo }) {
+    console.log(image);
+    console.log(image1);
+    console.log(image2);
+    const images = [image1, image2, image3, image4, image5, image6]
     return (
-        <Container>
-            <Row xs={12} lg={8}>
-                    <Col className="hvr-grow">
-                        <div className="storage">
-                            {projects.map(activeProject => (
-                                <>
-                                <img src={activeProject.image} alt={activeProject.name} class="image" />
-                                <div className="overlay">
-                                    <div className="text">
-                                        <a href={activeProject.link} target="_blank">{activeProject.name}</a> <br />
-                                        <a href={activeProject.repo} target="_blank">Repo</a>
-                                    </div>
-                                </div>
-                                </>
-                            ))}
-                            
+            <Col md={6} className="hvr-grow">
+                    <img src={images[id]} alt={name} className="image" />
+                    <div className="overlay">
+                        <div className="text">
+                            <a href={link} target="_blank">{name}</a>
+                            <a href={repo} target="_blank">Repo</a>
                         </div>
-                    </Col>
-                </Row>
-        </Container>
+                    </div>
+            </Col>
     )
 }
-export default Projects;
+export default PortfolioCard;

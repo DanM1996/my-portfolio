@@ -15,15 +15,27 @@ main {
 
 * {
   box-sizing: border-box;
-  background-color: var(--primary);
 }
-
-header, nav, ul, li, h1, span {
+h1 {
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  font-size: 48px;
+}
+/* header, nav, ul, li, h1, span {
   background-color: rgb(37, 36, 36);
+} */
+main {
+  background-image: url(./assets/images/background-dark.png);
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
 }
 header, footer {
   justify-content: space-between;
   padding: 20px;
+  background-image: url(./assets/images/background-dark.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .name-tag {
   margin-left: 40px;
@@ -97,7 +109,7 @@ a {
   margin-top: 30px;
   text-align: center;
 }
-.hvr-grow {
+/* .hvr-grow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -127,7 +139,7 @@ a {
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
   background-color: #2098D1;
   color: white;
-}
+} */
 .container {
   position: relative;
   width: 50%;
@@ -198,6 +210,7 @@ a {
 }
 h2, h3 {
   color: var(--text-color);
+  font-family: 'Poiret One';
 }
 .li-text {
   color: var(--text-color);
@@ -208,17 +221,16 @@ ul.style {
   background-color: var(--primary);
 }
 footer {
-  position: fixed;
+  /* position: fixed; */
   padding: 10px 10px 45px 10px;
   bottom: 0;
   width: 100%;
   /* Height of the footer*/ 
   height: 40px;
-  background-color: rgb(37, 36, 36);
   align-items: center;
 }
 footer a{
   text-decoration: none;
   color: var(--text-color);
-  background-color: rgb(37, 36, 36);
 }
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
