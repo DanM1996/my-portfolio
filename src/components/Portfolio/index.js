@@ -23,7 +23,7 @@ function Portfolio() {
         <div id="projects">
             <h2 class="text-format portfolio-title">Portfolio</h2>
             <Container>
-                <Row>
+                <Row >
                     <div>
                         {project}
                     </div>

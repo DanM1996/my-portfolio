@@ -238,3 +238,7 @@ footer a{
   color: var(--text-color);
 }
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+.design {
+  display: flex;
+  margin-right: 0px;
+}
