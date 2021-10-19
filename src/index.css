@@ -113,37 +113,6 @@ a {
   margin-top: 30px;
   text-align: center;
 }
-/* .hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.hvr-fade {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #2098D1;
-  color: white;
-} */
 .container {
   position: relative;
   width: 50%;
@@ -215,6 +184,7 @@ a {
 h2, h3 {
   color: var(--text-color);
   font-family: 'Poiret One';
+  text-align: center;
 }
 .li-text {
   color: var(--text-color);
@@ -238,7 +208,34 @@ footer a{
   color: var(--text-color);
 }
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-.design {
-  display: flex;
-  margin-right: 0px;
+.styling {
+  margin-top: 3rem;
+}
+/* .contact-icons {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+} */
+
+.contact-div {
+  text-align: center;
+} 
+.formatting-href, .formatting-href:hover{
+  text-decoration: none;
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 1rem;
+}
+.h2-style {
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  font-size: 40px;
+}
+.icon-style {
+  padding-right: 5px;
+  font-size: 30px;
 }

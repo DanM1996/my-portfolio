@@ -15,9 +15,8 @@ function PortfolioCard({ id, name, image, link, repo }) {
     console.log(image2);
     const images = [image1, image2, image3, image4, image5, image6]
     return (
-        <div>
-            <Col>
-                <Card>
+            <Col lg={4} md={6} s={12}>
+                <Card className="styling">
                     <Card.Img varient="top" src={images[id]} alt={name} className="image" />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
@@ -29,7 +28,6 @@ function PortfolioCard({ id, name, image, link, repo }) {
                     </Card.Body>
                 </Card>
             </Col>
-        </div>
     )
 }
 export default PortfolioCard;

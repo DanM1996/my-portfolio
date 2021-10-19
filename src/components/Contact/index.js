@@ -1,61 +1,38 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
-import Form from 'react-bootstrap/Form';
+import React from 'react';
+import { FaFile, FaMobile, FaEnvelope } from 'react-icons/fa';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import resume from '../../assets/images/Daniel Martinez Resume.pdf';
 
 
 function Contact() {
-    const [errorMessage, setErrorMessage] = useState('');
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
-    function formValues(data) {
-        if (data.target.name === "email") {
-            const validate = validateEmail(data.target.value)
-            if (!validate) {
-                setErrorMessage('Please provide a valid email address')
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if (!data.target.value.length) {
-                setErrorMessage(`Please enter your ${data.target.name}`)
-            } else {
-                setErrorMessage('');
-            }
-        }
-        if (!errorMessage) {
-            setFormState({...formState, [data.target.name]: data.target.value })
-        }
-    }
-    function runSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
     return (
         <>
             <div id="contact">
-                <h2 className="text-format">Contact Form</h2>
-                <Form id="contactForm" onSubmit={runSubmit}>
-                    <Form.Group className="mb-3" controlId="formBasicName">
-                        <Form.Label htmlFor="name" className="text-format">Name:</Form.Label>
-                        <Form.Control type="text" defaultValue={name} onBlur={formValues} name="name" placeholder="Enter your name" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label htmlFor="name" className="text-format">Email:</Form.Label>
-                        <Form.Control type="email" defaultValue={email} onBlur={formValues} name="email" placeholder="Enter valid email" />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label htmlFor="name" className="text-format">Message:</Form.Label>
-                        <Form.Control as="textarea" name="message" defaultValue={message} onBlue={formValues} rows={4} placeholder="Type your message here" />
-                    </Form.Group>
-                    {errorMessage && (
-                        <Form.Group className="mb-3">
-                            <p className="error-message">{errorMessage}</p>
-                        </Form.Group>
-                    )}
-                    <div className="center">
-                        <button type="submit" className="submit-btn">Submit</button>
-                    </div>
-                </Form>
+                <h2 className="h2-style">Contact Me</h2>
+                <Container>
+                    <Row>
+                        <Col className="contact-div" lg={4} md={6} s={8} xs={12}>
+                        <a href="mailto:bmdmartinez@gmail.com" className="formatting-href">
+                                <FaEnvelope className="icon-style" />
+                                bmdmartinez@gmail.com
+                            </a>
+                        </Col>
+                        <Col className="contact-div" lg={4} md={6} s={8} xs={12}>
+                        <a href={resume} download="resume" className="formatting-href">
+                                <FaFile className="icon-style" />
+                                Resume
+                            </a>
+                        </Col>
+                        <Col className="contact-div" lg={4} md={4} s={8} xs={12}>
+                            <a href="tel:9739349428" className="formatting-href">
+                                <FaMobile className="icon-style" />
+                                973-934-9428
+                            </a>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         </>
     )
