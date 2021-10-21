@@ -12,10 +12,8 @@ function Resume() {
                 <Container>
                     <Row>
                         <Col className="contact-div" lg={3} md={6} s={8} xs={12}>
-                            <p>
-                                <FaGit className="icon-style" />
-                                Git
-                            </p>
+                        <FaGit className="icon-style" />
+                            <p>Git</p>
                         </Col>
                         <Col className="contact-div" lg={3} md={6} s={8} xs={12}>
                             <p>

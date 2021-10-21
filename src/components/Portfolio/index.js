@@ -15,6 +15,8 @@ function Portfolio() {
                     image={items.image}
                     link={items.link}
                     repo={items.repo}
+                    text={items.text}
+                    tools={items.tools}
                 />
         )
     }

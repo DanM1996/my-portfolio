@@ -9,8 +9,8 @@ import resume from '../../assets/images/Daniel Martinez Resume.pdf';
 function Contact() {
     return (
         <>
-            <div id="contact">
-                <h2 className="h2-style">Contact Me</h2>
+            <div id="contact" className="contact-style">
+                <h2 className="h2-style contact-h2">Contact Me</h2>
                 <Container>
                     <Row>
                         <Col className="contact-div" lg={4} md={6} s={8} xs={12}>
