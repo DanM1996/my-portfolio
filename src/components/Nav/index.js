@@ -1,13 +1,7 @@
-import React, { useEffect } from 'react';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import React from 'react';
+import { Link } from 'react-scroll';
 
-function Nav(props) {
-    const { pages = [], setCurrentPage, currentPage } = props;
-
-    // useEffect function triggers everytime currentPage changes (category value) and changes the document title to mirror the page we're on
-    useEffect(() => {
-        document.title = currentPage.name
-    }, [currentPage])
+function Nav() {
     
     return (
         <header className="flex-row">

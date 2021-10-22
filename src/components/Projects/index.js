@@ -10,9 +10,6 @@ import image6 from "../../assets/images/Notes.PNG";
 
 
 function PortfolioCard({ id, name, image, link, repo, text, tools }) {
-    console.log(image);
-    console.log(image1);
-    console.log(image2);
     const images = [image1, image2, image3, image4, image5, image6]
     return (
         <Col lg={4} md={6} s={12}>
@@ -24,6 +21,7 @@ function PortfolioCard({ id, name, image, link, repo, text, tools }) {
                     <Card.Text className="center tools-bold">Tools Used:</Card.Text>
                     <Card.Text className="center tools-margin">{tools}</Card.Text>
                     <div className="center">
+                        <Card.Text className="center tools-bold">Links:</Card.Text>
                         <Card.Link className="card-a" href={link} target="_blank">{name}</Card.Link>
                         <Card.Link className="card-a" href={repo} target="_blank">Git Repo</Card.Link>
                     </div>

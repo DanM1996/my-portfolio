@@ -15,7 +15,7 @@ function About(){
             </p>
         </div>
         <div>
-            <img src={headshot} className="picture" />
+            <img src={headshot} className="picture" alt="of Dan Martinez" />
         </div>
         </>
     )
