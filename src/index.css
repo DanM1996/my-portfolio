@@ -133,10 +133,11 @@ a {
 .about-me {
   color: white;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   font-size: 24px;
   margin-left: 25%;
   margin-right: 25%;
+  margin-bottom: 80px;
 }
 .picture {
   display: block;
@@ -237,4 +238,51 @@ background-color: rgb(255, 255, 209);
 }
 .footer-flex {
   display: flex;
+}
+.picture {
+  float: left;
+  width: 10%;
+  padding-top: 150px;
+  margin-left: 200px;
+}
+.about {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 920px) {
+  .picture {
+    width: 20%;
+    padding: 0px;
+    float: none;
+    margin-left: auto;
+  }
+  .about-me {
+    font-size: 24px;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 80px;
+  }
+  
+}
+@media screen and (max-width: 540px) {
+  .picture {
+    width: 40%;
+  }
+  .about-me {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .picture {
+    width: 50%;
+  }
+  .about-me {
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+  
 }
