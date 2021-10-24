@@ -15,15 +15,27 @@ main {
 
 * {
   box-sizing: border-box;
-  background-color: var(--primary);
 }
-
-header, nav, ul, li, h1, span {
+h1 {
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  font-size: 48px;
+}
+/* header, nav, ul, li, h1, span {
   background-color: rgb(37, 36, 36);
+} */
+main {
+  background-image: url(./assets/images/background-dark.png);
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
 }
 header, footer {
   justify-content: space-between;
   padding: 20px;
+  background-image: url(./assets/images/background-dark.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .name-tag {
   margin-left: 40px;
@@ -44,6 +56,10 @@ header, footer {
   margin-top: 10px;
   list-style: none;
 }
+li, li a {
+  list-style-type: none;
+  text-decoration: none;
+}
 a {
   text-decoration: none;
 }
@@ -57,34 +73,6 @@ a {
 .navActive {
   text-shadow: 2px 2px 10px #f1f1dc, -2px -2px 10px #fafcb0;
 }
-
-.project-1 {
-  background-image: url(./assets/images/Spontaneous-Selection.PNG);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 300px;
-  height: 260px;
-  margin: 10px 20px;
-}
-
-.project-2 {
-  background-image: url(./assets/images/Blue42.PNG);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 300px;
-  height: 250px;
-  margin: 10px 20px;
-}
-.hover-style-2 {
-  background-color: white;
-  background-image: url(./assets/images/Blue42.PNG);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 300px;
-  height: 250px;
-  margin: 10px 20px;
-  /* filter: opacity(.4); */
-}
 .submit-btn {
   background-color: white;
   color: black;
@@ -96,37 +84,6 @@ a {
 .center {
   margin-top: 30px;
   text-align: center;
-}
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.hvr-fade {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #2098D1;
-  color: white;
 }
 .container {
   position: relative;
@@ -176,10 +133,11 @@ a {
 .about-me {
   color: white;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   font-size: 24px;
   margin-left: 25%;
   margin-right: 25%;
+  margin-bottom: 80px;
 }
 .picture {
   display: block;
@@ -193,11 +151,13 @@ a {
   font-size: 20px;
 }
 .skills {
-  padding-top: 15px;
-  padding-bottom: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 h2, h3 {
   color: var(--text-color);
+  font-family: 'Poiret One';
+  text-align: center;
 }
 .li-text {
   color: var(--text-color);
@@ -208,17 +168,121 @@ ul.style {
   background-color: var(--primary);
 }
 footer {
-  position: fixed;
   padding: 10px 10px 45px 10px;
-  bottom: 0;
-  width: 100%;
-  /* Height of the footer*/ 
-  height: 40px;
-  background-color: rgb(37, 36, 36);
-  align-items: center;
+  margin: auto;
 }
 footer a{
   text-decoration: none;
   color: var(--text-color);
-  background-color: rgb(37, 36, 36);
+}
+.footer li {
+  text-align: center
+}
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+.styling {
+  margin-top: 3rem;
+}
+
+.contact-div {
+  text-align: center;
+  color: rgb(20, 93, 187);
+  font-weight: bolder;
+} 
+.formatting-href, .formatting-href:hover{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 1rem;
+}
+.h2-style {
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.icon-style {
+  padding-right: 5px;
+  font-size: 30px;
+}
+.card-style {
+background-color: rgb(255, 255, 209);
+}
+.card-title {
+  text-align: center;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+.card-a, .card-a:hover {
+  text-decoration: none;
+  color: black;
+  text-align: space;
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.tools-margin {
+  margin-top: -5px;
+}
+.tools-bold {
+  font-weight: bolder;
+}
+.contact-style {
+  padding-top: 1px;
+  padding-bottom: 30px;
+  background-color: rgb(255, 255, 194);
+}
+.contact-h2 {
+  color: black;
+}
+.footer-flex {
+  display: flex;
+}
+.picture {
+  float: left;
+  width: 10%;
+  padding-top: 150px;
+  margin-left: 200px;
+}
+.about {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 920px) {
+  .picture {
+    width: 20%;
+    padding: 0px;
+    float: none;
+    margin-left: auto;
+  }
+  .about-me {
+    font-size: 24px;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 80px;
+  }
+  
+}
+@media screen and (max-width: 540px) {
+  .picture {
+    width: 40%;
+  }
+  .about-me {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .picture {
+    width: 50%;
+  }
+  .about-me {
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+  
 }

@@ -4,7 +4,8 @@ import headshot from '../../assets/images/Headshot.png';
 function About(){
     return (
         <>
-        <div>
+        <div id="about" className="about">
+        <img src={headshot} className="picture" alt="of Dan Martinez" />
             <p className="about-me">
             Hello, my name is Daniel Martinez and I'm Full Stack Web Developer with an undergraduate degree in Interactive Multimedia from The College of New Jersey and a certificate in 
             Full Stack Web Development from Case Western University. From problem-solving to learning and understanding new frameworks such as 
@@ -14,9 +15,7 @@ function About(){
             My passion for technology and learning combined with a strong team spirit will allow me to provide a valuable and diverse skill set. 
             </p>
         </div>
-        <div>
-            <img src={headshot} className="picture" />
-        </div>
+            
         </>
     )
 }

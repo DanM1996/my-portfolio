@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Blue 42",
+        "link": "https://secret-everglades-56686.herokuapp.com/",
+        "repo": "https://github.com/DanM1996/blue-42",
+        "image": "../../assets/images/Blue42.PNG",
+        "text": "With Blue 42, my team and I wanted to create a beginner-friendly fantasy football experience. Rather than focusing on the NFL teams, we decided to have our league centered around college football.",
+        "tools": "HTML 5, CSS3, JavaScript, Node, Express, MySQL, Sequelize, Handlebars, Materialize, Git",
+        "id": "0"
+    },
+    {
+        "name": "Spontaneous Selection",
+        "link": "https://danm1996.github.io/spontaneous-selection/",
+        "repo": "https://github.com/DanM1996/spontaneous-selection",
+        "image": "../../assets/images/Spontaneous-Selection.PNG",
+        "text": "Spontaneous Selection is the perfect app for a date night with no plans. Rather than trying to figure out where you want to eat and go, our app will give you a random resturant/bar and event in your city.",
+        "tools": "HTML 5, CSS3, JavaScript, Materialize, JQuery, 3rd Party APIs, Git",
+        "id": "1"
+    },
+    {
+        "name": "Budget Tracker",
+        "link": "https://tranquil-eyrie-77020.herokuapp.com/",
+        "repo": "https://github.com/DanM1996/budget-tracker",
+        "image": "../../assets/images/Budget.PNG",
+        "text": "Built as a PWA, Budget Tracker is your one stop app for planning a budget. Not only is it a responve app, but it also works in offline mode! Any changes made will be sent to the server once the app is online.",
+        "tools": "HTML 5, CSS3, JavaScript, MongoDB, IndexedDB, Node, Express, Git",
+        "id": "2"
+    },
+    {
+        "name": "Password Generator",
+        "link": "https://danm1996.github.io/password-generator/Develop/",
+        "repo": "https://github.com/DanM1996/password-generator",
+        "image": "../../assets/images/Password.PNG",
+        "text": "With Blue 42, my team and I wanted to create a beginner-friendly fantasy football experience. Rather than focusing on the NFL teams, we decided to have our league centered around college football.",
+        "tools": "HTML 5, CSS3, JavaScript, MySQL, Sequelize, Handlebars, Materialize, Git",
+        "id": "3"
+    },
+    {
+        "name": "Work Day Scheduler",
+        "link": "https://danm1996.github.io/work-day-scheduler/",
+        "repo": "https://github.com/DanM1996/work-day-scheduler",
+        "image": "../../assets/images/Schedule.PNG",
+        "text": "Aimed at the busy employee, Work Day Scheduler seeks to help you maintain your busy schedule in 1-hour block segments. You can add notes, meetings, etc. to keep yourself on track.",
+        "tools": "HTML 5, CSS3, JavaScript, JQuery, Moment.js, Local Storage, Git",
+        "id": "4"
+        
+    },
+    {
+        "name": "Note Taker",
+        "link": "https://peaceful-lowlands-37017.herokuapp.com/" ,
+        "repo": "https://github.com/DanM1996/note-taker",
+        "image": "../../assets/images/Notes.PNG",
+        "text": "A handy app for making notes on the fly, Note Taker allows you to type, save, and delete notes at a moments notice. Responsive design adds a nice feature that notes can only be saved once typed out.",
+        "tools": "HTML 5, CSS3, JavaScript, Bootstrap, Node.js, Express.js, Git",
+        "id": "5"
+    }
+]

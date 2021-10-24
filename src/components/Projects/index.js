@@ -1,31 +1,33 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import image1 from "../../assets/images/Blue42.PNG";
+import image2 from "../../assets/images/Spontaneous-Selection.PNG";
+import image3 from "../../assets/images/Budget.PNG";
+import image4 from "../../assets/images/Password.PNG";
+import image5 from "../../assets/images/Schedule.PNG";
+import image6 from "../../assets/images/Notes.PNG";
 
-function Projects(props){
-    const{ projects = [] } = props;
+
+function PortfolioCard({ id, name, image, link, repo, text, tools }) {
+    const images = [image1, image2, image3, image4, image5, image6]
     return (
-        <Container>
-            <Row xs={12} lg={8}>
-                    <Col className="hvr-grow">
-                        <div className="storage">
-                            {projects.map(activeProject => (
-                                <>
-                                <img src={activeProject.image} alt={activeProject.name} class="image" />
-                                <div className="overlay">
-                                    <div className="text">
-                                        <a href={activeProject.link} target="_blank">{activeProject.name}</a> <br />
-                                        <a href={activeProject.repo} target="_blank">Repo</a>
-                                    </div>
-                                </div>
-                                </>
-                            ))}
-                            
-                        </div>
-                    </Col>
-                </Row>
-        </Container>
+        <Col lg={4} md={6} s={12}>
+            <Card className="styling">
+                <Card.Img varient="top" src={images[id]} alt={name} className="image" />
+                <Card.Body className="card-style">
+                    <Card.Title className="card-title">{name}</Card.Title>
+                    <Card.Text className="center tools-margin">{text}</Card.Text>
+                    <Card.Text className="center tools-bold">Tools Used:</Card.Text>
+                    <Card.Text className="center tools-margin">{tools}</Card.Text>
+                    <div className="center">
+                        <Card.Text className="center tools-bold">Links:</Card.Text>
+                        <Card.Link className="card-a" href={link} target="_blank">{name}</Card.Link>
+                        <Card.Link className="card-a" href={repo} target="_blank">Git Repo</Card.Link>
+                    </div>
+                </Card.Body>
+            </Card>
+        </Col>
     )
 }
-export default Projects;
+export default PortfolioCard;
