@@ -5,6 +5,7 @@ function About(){
     return (
         <>
         <div id="about" className="about">
+        <h2 class="text-format h2-style">About</h2>
         <img src={headshot} className="picture" alt="of Dan Martinez" />
             <p className="about-me">
             Hello, my name is Daniel Martinez and I'm Full Stack Web Developer with an undergraduate degree in Interactive Multimedia from The College of New Jersey and a certificate in 
