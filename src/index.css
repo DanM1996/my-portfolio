@@ -6,10 +6,6 @@ main {
 
 :root {
   --primary: #141414;
-  --secondary: #8f95d3;
-  --tertiary: #4c956c;
-  --accent: #f7996e;
-  --dark: #191923;
   --text-color: rgb(246, 248, 244);
 }
 
@@ -21,9 +17,6 @@ h1 {
   font-weight: bolder;
   font-size: 48px;
 }
-/* header, nav, ul, li, h1, span {
-  background-color: rgb(37, 36, 36);
-} */
 main {
   background-image: url(./assets/images/background-dark.png);
   background-size: cover;
@@ -104,10 +97,6 @@ a {
   opacity: 0;
   transition: .4s ease;
   background-color: white;
-}
-
-.storage:hover .overlay {
-  opacity: .6;
 }
 
 .text {
@@ -283,6 +272,5 @@ background-color: rgb(255, 255, 209);
     font-size: 18px;
     margin: auto;
     margin-bottom: 80px;
-  }
-  
+  } 
 }
