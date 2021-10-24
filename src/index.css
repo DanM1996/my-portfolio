@@ -231,12 +231,13 @@ background-color: rgb(255, 255, 209);
 }
 .footer-flex {
   display: flex;
+  font-size: 20px;
 }
 .picture {
   float: left;
   width: 10%;
-  padding-top: 150px;
   margin-left: 200px;
+  padding-top: 50px;
 }
 .about {
   margin-top: 5%;
@@ -258,15 +259,21 @@ background-color: rgb(255, 255, 209);
 @media screen and (max-width: 920px) {
   .picture {
     width: 20%;
-    padding: 0px;
+    /* padding: 0px; */
     float: none;
     margin-left: auto;
+    padding-top: 30px;
   }
   .about-me {
     font-size: 24px;
     margin: auto;
     padding-top: 50px;
     margin-bottom: 80px;
+  }
+  .footer-flex {
+    display: block;
+    text-align: center;
+    padding-left: 0px;
   }
   
 }
