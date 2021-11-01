@@ -3,7 +3,7 @@
         "name": "Procrast-A-Date",
         "link": "https://procrasta-date.herokuapp.com/",
         "repo": "https://github.com/KevinPMyers/Procrasta-Date",
-        "image": "../../assets/images/Password.PNG",
+        "image": "../../assets/images/ProcrastADate.png",
         "text": "Procrast-A-Date is for those last minute date planners who want a dinner plan in an instant. With the help of Spotify and Spoonacular, we'll generate a date night that meets your needs.",
         "tools": "HTML 5, CSS3, JavaScript, Spotify API, Spoonacular API, Node, Express, MongoDB, Mongoose, JWT, bcrypt, React, Ant Design, GraphQL",
         "id": "0"
